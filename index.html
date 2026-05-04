@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module">
+        let data = await fetch('/api/system/stats');
+        let res = await data.json();
+
+        console.log(res);
+        
+        
+    </script>
+</head>
+<body>
+    <p>Media stats</p>
+    <p id="count">Number of items: </p>
+    <p id="total-size">Total library size: </p>
+    <p id="db-size">Size of database: </p>
+</body> 
+</html>

@@ -1,0 +1,28 @@
+[package]
+name = "albums"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+axum = { version = "0.8.8", features = ["macros", "ws"] }
+chrono = { version = "0.4.44", features = ["serde"] }
+colored = "3.1.1"
+env_logger = "0.11.9"
+features = "0.10.0"
+image = "0.25.9"
+imagesize = "0.14.0"
+indicatif = "0.18.4"
+kamadak-exif = "0.6.1"
+log = { version = "0.4.29", features = ["std"] }
+mime_guess = "2.0.5"
+mozjpeg = { version = "0.10.13", features = ["nasm_simd", "with_simd"] }
+r2d2 = "0.8.10"
+r2d2_sqlite = "0.32.0"
+rusqlite = { version = "0.38.0", features = ["bundled"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread", "signal"] }
+tokio-util = { version = "0.7.18", features = ["io"] }
+tower-http = { version = "0.6.8", features = ["compression-gzip", "compression-zstd", "fs"] }
+walkdir = "2.5.0"
